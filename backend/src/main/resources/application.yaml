@@ -1,0 +1,23 @@
+server:
+  port: ${env.APPLICATION_PORT:8081}
+  servlet:
+    context-path: /api/v1
+
+spring:
+  application:
+    name: helpdesk
+  flyway:
+    enable: true
+    baseline-on-migrate: false
+    locations: classpath:db/migration
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${env.DATABASE_URL}
+    username: ${env.DATABASE_USERNAME}
+    password: ${env.DATABASE_PASSWORD}
+
+helpdesk:
+  attachments-folder: ${env.ATTACHMENTS_FOLDER}
+
+jwt:
+  secret: h9G+QWz3G7u0Rk5+Q3YzN9Kz+zN5R3F5zYQw3zN6Q1Z3Qk5yW3L0==

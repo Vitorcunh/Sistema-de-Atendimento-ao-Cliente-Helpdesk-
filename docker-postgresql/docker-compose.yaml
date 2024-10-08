@@ -1,0 +1,12 @@
+version: "3.5"
+
+services:
+  postgresql:
+    build: .
+    container_name: postgresql
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=StrongAdminP@ssw0rd
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=postgres

@@ -1,0 +1,22 @@
+meta {
+  name: Ticket Interaction
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8081/api/v1/tickets/7464cd2a-ae44-462b-b14f-8d60bcef0093/interaction
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTcyMzE1NDY2OCwiaWF0IjoxNzIzMTUxMDY4fQ.Wk27PMswF0GRN5LiNtzcGZPM0GCCCJnHKB2mC-g0V4U
+}
+
+body:json {
+  {
+    "message": "nao vai ser atendido",
+    "status": "IN_PROGRESS"
+  }
+}

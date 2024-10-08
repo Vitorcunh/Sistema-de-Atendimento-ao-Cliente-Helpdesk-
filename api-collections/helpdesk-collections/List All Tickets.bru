@@ -1,0 +1,15 @@
+meta {
+  name: List All Tickets
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8081/api/v1/tickets
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjdXN0b21lciIsImV4cCI6MTcyMzU4NDM3MSwiaWF0IjoxNzIzNTgwNzcxfQ.YjiSx-ipi_YhgEqOp-W4JnDE3vScW0koPuqp3JhGZJE
+}
