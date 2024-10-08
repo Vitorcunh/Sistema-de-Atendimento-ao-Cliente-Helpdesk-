@@ -2,7 +2,7 @@
 
 ## ℹ️ Sobre o Projeto
 
-Um Sistema de atendimento ao cliente criando do zero com Helpdesk, criamos o XML do projeto, usando a versão do Java 23, usando banco de dados MySQL, com isomnia para teste de requisições, mas Docker na aplicação, usamos as tecnologias:
+Um Sistema de atendimento ao cliente criando do zero com Helpdesk, criamos o XML do projeto, usando Java, usando banco de dados MySQL, com isomnia para teste de requisições, mas Docker na aplicação, usamos as tecnologias:
 
 - Linguagem: Java
 - Framework: Spring Boot
