@@ -8,7 +8,6 @@ Um Sistema de atendimento ao cliente criando do zero com Helpdesk, criamos o XML
 - Framework: Spring Boot
 - Banco de Dados: PostgreSQL
 
-A aplicação possui as funcionalidades básicas de CRUD (Create, Read, Update, Delete) para gerenciar tarefas.
 
 ## 🛠️ Ferramentas Utilizadas
 
