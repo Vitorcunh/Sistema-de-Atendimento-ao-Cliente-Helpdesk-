@@ -1,70 +1,71 @@
- 🎉 **Bem-vindo ao Sistema-de-Atendimento-ao-Cliente-Helpdes** 🚀
+# Sistema de Helpdesk com Java e Spring Boot
 
-## ℹ️ Sobre o Projeto
+Bem-vindo ao sistema de helpdesk desenvolvido com **Java 11+** e **Spring Boot**. Este projeto oferece uma solução robusta e eficiente para gerenciar tickets de suporte e atendimento ao cliente, com funcionalidades modernas e foco em segurança.
 
-Um Sistema de atendimento ao cliente criando do zero com Helpdesk, criamos o XML do projeto, usando Spring Boot, banco de dados MySQL, com isomnia para teste de requisições, mas Docker na aplicação, usamos as tecnologias:
+## 🚀 Funcionalidades
 
-- Linguagem: Java
-- Framework: Spring Boot
-- Banco de Dados: PostgreSQL
+- **Cadastro de Usuários**: Permite criar e gerenciar perfis de usuários.
+- **Abertura e Acompanhamento de Tickets**: Sistema completo para abrir, visualizar e gerenciar tickets de suporte.
+- **Upload de Arquivos**: Integração de upload de arquivos nos tickets com codificação em **Base64**, armazenando-os localmente de forma segura.
+- **Relatórios de Atendimento**: Geração de relatórios para análise de desempenho e acompanhamento dos chamados.
+
+## 🔐 Segurança
+
+- **Autenticação JWT**: Implementação de autenticação e autorização via **JSON Web Tokens (JWT)** para garantir acesso seguro aos endpoints.
+- **Spring Security**: Protege as APIs REST e garante que apenas usuários autenticados possam acessar recursos.
+- **Criptografia de Senhas**: Utilização de **BCrypt** para criptografar as senhas dos usuários no banco de dados.
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Java 11+**
+- **Spring Boot**
+- **Spring Security**
+- **JWT (JSON Web Token)**
+- **BCrypt**
+- **Base64 para codificação/decodificação de arquivos**
+- **Armazenamento Local de Arquivos**
+
+## 📦 Estrutura do Projeto
+
+```bash
+/src
+  └── main
+      ├── java
+      │   ├── com.example.helpdesk
+      │   │   ├── controller  # Controladores REST
+      │   │   ├── model       # Modelos de dados
+      │   │   ├── repository  # Repositórios JPA
+      │   │   └── service     # Lógica de negócios
+      ├── resources
+      │   ├── application.properties  # Configurações da aplicação
+      └── webapp
+          ├── static  # Arquivos estáticos
+          └── templates  # Arquivos de templates (HTML);
 
 
-## 🛠️ Ferramentas Utilizadas
+ ⚙️ Como Executar o Projeto
 
-- Java
-- Insomnia
-- Docker
-- PostgreSQL
-- XML
+ Pré-requisitos
+
+- **JDK 11+** instalado
+- **Maven** para gerenciamento de dependências
+- **MySQL** ou outro banco de dados configurado
+
+ Passos
+
+1. Clone o repositório:
+   
+   git clone https://github.com/usuario/sistema-helpdesk.git
+
+2. Navegue até a pasta do projeto
+   
+   cd sistema-helpdesk
+
+3. Configure o banco de dados no arquivo application.properties.
+
+4. Execute o projeto com Maven
+   
+   mvn spring-boot:run
 
 
-## 🚀 Executando o Projeto
 
-Siga as instruções abaixo para executar o projeto em seu ambiente local:
-
-1. **Clone o repositório:**
-
-   ```
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   ```
-
-2. **Navegue até o diretório do projeto:**
-
-   ```
-   cd nome-do-repositorio
-   ```
-
-3. **Instale as dependências:**
-
-   ```
-   pip install -r requirements.txt
-   ```
-
-4. **Execute o servidor:**
-
-   ```
-   python app.py
-   ```
-
-5. **Acesse a aplicação:**
-
-   Abra o seu navegador e digite o seguinte endereço:
-
-   ```
-   http://localhost:5000
-   ```
-
-   Agora você pode começar a utilizar a aplicação, criar, visualizar, atualizar e excluir tarefas.
-
-## 📝 Contribuição
-
-Se você deseja contribuir com melhorias para o projeto, siga as etapas abaixo:
-
-1. Faça um fork do repositório e clone-o em sua máquina.
-2. Crie uma nova branch para suas modificações.
-3. Faça as alterações necessárias e adicione-as ao stage.
-4. Envie um pull request para que suas modificações sejam revisadas.
-
-Ficaremos felizes em receber suas contribuições!
-
-✨ Divirta-se explorando e personalizando o Projeto de Exemplo! Se tiver alguma dúvida ou precisar de suporte, fique à vontade para entrar em contato. Aproveite! ✨
