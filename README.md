@@ -2,6 +2,8 @@
 
 Bem-vindo ao sistema de helpdesk desenvolvido com **Java 11+** e **Spring Boot**. Este projeto oferece uma solução robusta e eficiente para gerenciar tickets de suporte e atendimento ao cliente, com funcionalidades modernas e foco em segurança.
 
+- <samp> Continuação do Projeto em Front End [__here!__](https://github.com/Vitorcunh/Sistema-de-Atendimento-ao-Cliente-Helpdesk-FrontEnd)</samp>
+
 ## 🚀 Funcionalidades
 
 - **Cadastro de Usuários**: Permite criar e gerenciar perfis de usuários.
